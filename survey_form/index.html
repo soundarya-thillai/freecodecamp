@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Survey Form
+  </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out the survey form details</p>
+  <form id="survey-form">
+   
+<fieldset>
+    <label id="name-label" for="name">Enter your name: <input placeholder="enter your name" required type="text" id="name"></label>
+    <label id="email-label" for="email">Enter your email<input required placeholder="enter your email" type="email" id="email">
+    </label>
+    <label id="number-label" for="number">Enter the number
+    <input placeholder="enter the number" type="number" id="number" pattern="[0-9]" min="18" max="60">
+</label>
+</fieldset>
+<hr>
+
+<fieldset>
+<select id="dropdown">
+  <option name="options">option 1</option>
+  <option name="options">option 2</option2>
+  </select>
+  </fieldset>
+
+  <fieldset>
+  <label for="male"> <input id="male" type="radio" value="male" name="gender"> male</label>
+  <label for="female"> <input id="female" type="radio" value="female" name="gender"> female</label>
+  </fieldset>
+
+  <fieldset>
+  <label for="check1"><input type="checkbox" id="check1" value="ans1"> apple</label>
+  <label for="check2"><input type="checkbox" id="check2" value="ans2"> orange</label>
+<label for="check3"><input type="checkbox" id="check3" value="ans3"> banana</label>
+</fieldset>
+
+<fieldset>
+<label for="comments">For comments
+<textarea id="comments"></textarea></label>
+</fieldset>
+
+<fieldset>
+<label for="submit"><input type="submit" value="submit" id="submit"></label>
+</fieldset>
+  </form>    
+</body>
+</html>
